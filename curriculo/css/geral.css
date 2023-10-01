@@ -31,10 +31,13 @@ div{
 
 p{
     font-size: 12px;
-    text-align: justify;
     
     padding: 0 10px;
     margin: 5px 0;
+}
+
+p#objetivo{
+    text-align: justify;
 }
 
 #objetivo{
