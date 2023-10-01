@@ -1,0 +1,89 @@
+/* ajuste no LEGEND */
+@media screen and (min-width: 400px) {
+    h1{
+        font-size: 27px;
+    }
+    main{
+        width: 450px;
+    }
+
+    p{
+        font-size: 12px;
+        margin: 5px 10px;
+        padding: 0 5px;
+    }
+}
+
+/* Telas de tablet */
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 34px;
+    }
+    main{
+        width: 550px;
+    }
+    legend{
+        text-align: left;
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+/* Telas de computador */
+@media screen and (min-width: 992px) {
+    h1{
+        font-size: 37px;
+    }
+    main{
+        width: 600px;
+    }
+}
+
+/* Telas grandes */
+@media screen and (min-width: 1200px) {
+    .dados-pessoais{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media print {
+    h1{
+        font-size: 37px;
+    }
+
+    main{
+        width: 600px;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    main::after{
+        content: 'Página gerada pelo site: https://sraraujo.github.io/portfolio/curriculo';
+        font-size: 12px;
+        text-align: right;
+    }
+
+    legend{
+        text-align: left;
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+
+    .dados-pessoais{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    a, a:visited{
+        color: black;
+    }
+}
