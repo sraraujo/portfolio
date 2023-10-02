@@ -8,10 +8,6 @@
         width: 450px;
     }
 
-    picture > img {
-        display: none;
-    }
-
     p{
         font-size: 12px;
         margin: 5px 10px;
@@ -27,10 +23,6 @@
 
     main{
         width: 550px;
-    }
-
-    picture > img {
-        display: none;
     }
 
     legend{
@@ -52,10 +44,6 @@
     main{
         width: 600px;
     }
-
-    picture > img {
-        display: none;
-    }
 }
 
 /* Telas grandes */
@@ -63,10 +51,6 @@
     .dados-pessoais{
         display: flex;
         justify-content: space-between;
-    }
-
-    picture > img {
-        display: none;
     }
 }
 
@@ -86,7 +70,7 @@
         justify-content: space-between;
     }
     
-    picture > img{
+    article > picture > img{
         display: flex;
         width: 80px;
         height: 74px;
