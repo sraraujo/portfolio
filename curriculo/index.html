@@ -33,7 +33,7 @@
 
                 <div class="dados-pessoais">
                     <section>
-                        <p><strong>Idade:</strong> 32 anos 06/10/1990</p>
+                        <p><strong>Idade:</strong> <output></output> anos (06/10/1990)</p>
                         <p><strong>Estado Civil:</strong> Solteiro</p>
                     </section>
                     <section>
@@ -100,13 +100,13 @@
 
                 <div>
                     <p><strong>Curso:</strong> HTML5 e CSS3</p>
-                    <p><strong>Instituição:</strong> <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Vídeo</a></p>
+                    <p><strong>Instituição:</strong> <a href="https://www.cursoemvideo.com/sobre/" target="_blank" rel="external">Curso em Vídeo</a></p>
                     <p><strong>Carga Horária:</strong> 160 horas</p>
                 </div>
 
                 <div>
                     <p><strong>Curso:</strong> Python 3</p>
-                    <p><strong>Instituição:</strong> <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Vídeo</a></p>
+                    <p><strong>Instituição:</strong> <a href="https://www.cursoemvideo.com/sobre/" target="_blank" rel="external">Curso em Vídeo</a></p>
                     <p><strong>Carga Horária:</strong> 120  horas</p>
                 </div>
 
@@ -120,6 +120,14 @@
         </form>
 
     </main>
+
+    <script>
+        var resultado = document.querySelector("output")
+        var agora = new Date()
+
+        var idade = agora.getMonth() >= 10 && agora.getDay() >= 6 ? agora.getFullYear() - 1990 : agora.getFullYear() - 1991
+        resultado.innerHTML = `${idade}`
+    </script>
 
 </body>
 </html>
