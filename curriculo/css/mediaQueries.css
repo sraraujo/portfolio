@@ -3,8 +3,13 @@
     h1{
         font-size: 27px;
     }
+
     main{
         width: 450px;
+    }
+
+    picture > img {
+        display: none;
     }
 
     p{
@@ -19,9 +24,15 @@
     h1{
         font-size: 34px;
     }
+
     main{
         width: 550px;
     }
+
+    picture > img {
+        display: none;
+    }
+
     legend{
         text-align: left;
         margin: 0 10px;
@@ -41,6 +52,10 @@
     main{
         width: 600px;
     }
+
+    picture > img {
+        display: none;
+    }
 }
 
 /* Telas grandes */
@@ -48,6 +63,10 @@
     .dados-pessoais{
         display: flex;
         justify-content: space-between;
+    }
+
+    picture > img {
+        display: none;
     }
 }
 
