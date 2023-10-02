@@ -62,10 +62,18 @@
         box-shadow: none;
     }
 
-    main::after{
-        content: 'Página gerada pelo site: https://sraraujo.github.io/portfolio/curriculo';
-        font-size: 12px;
-        text-align: right;
+    article{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    picture > img{
+        display: flex;
+        width: 80px;
+        height: 74px;
+    
+        margin-top: 10px;
+        margin-right: 15px;
     }
 
     legend{

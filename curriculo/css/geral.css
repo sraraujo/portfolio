@@ -31,6 +31,10 @@ div{
     padding: 5px 0;
 }
 
+picture > img {
+    display: none;
+}
+
 p{
     font-size: 12px;
     
@@ -52,7 +56,9 @@ p::selection, strong::selection, a::selection{
 
 fieldset{
     margin: 15px auto;
-    border-radius: 8px;
+    border-radius: 8px;   
+
+    border:  2px solid rgba(0, 0, 0, 0.615);
 }
 
 legend{
