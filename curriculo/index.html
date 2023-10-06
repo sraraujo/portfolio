@@ -133,7 +133,7 @@
         var resultado = document.querySelector("output")
         var agora = new Date()
 
-        var idade = agora.getMonth() >= 10 && agora.getDay() >= 6 ? agora.getFullYear() - 1990 : agora.getFullYear() - 1991
+        var idade = (agora.getMonth() + 1) >= 10 && (agora.getDay() + 1) >= 6 ? agora.getFullYear() - 1990 : agora.getFullYear() - 1991
         resultado.innerHTML = `${idade}`
     </script>
 
