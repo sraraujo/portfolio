@@ -25,13 +25,14 @@
 
                 <div>
                     <p><strong>Bairro:</strong> Guanaces, Cascavel/CE</p>
-                    <p><strong>Contato / Wpp:</strong> (85) 9.9961-1172</p>
+                    <p><strong>Contato / Wpp:</strong> (85) 9.9961-1172 / 85 9.8568-0661</p>
                     <p><strong>Email:</strong> jap_araujo@hotmail.com</p>
                     <p class="nao-imprimivel"><strong>GitHub:</strong> <a href="https://github.com/sraraujo" target="_blank" rel="external">Sraraujo</a> / <a href="https://sraraujo.github.io/projetos/" target="_blank" rel="external">Página de Projetos</a></p>
                 </div>
 
                 <picture>
-                    <img src="imagens/qe-code-curriculo.jpg" alt="QR-Code">
+                    <img src="imagens/jap-p.jpg" alt="Foto de perfil dejonas de Araújo" id="foto-perfil">
+                    <img src="imagens/qe-code-curriculo.jpg" alt="QR-Code" id="qr-code">
                 </picture>
 
             </article>  
@@ -41,7 +42,7 @@
 
                 <div class="dados-pessoais">
                     <section>
-                        <p><strong>Idade:</strong> <output></output> anos (06/10/1990)</p>
+                        <p><strong>Idade:</strong> <output id="idadeAqui"></output> anos (06/10/1990)</p>
                         <p><strong>Estado Civil:</strong> Solteiro</p>
                     </section>
                     <section>
@@ -130,10 +131,21 @@
     </main>
 
     <script>
-        var resultado = document.querySelector("output")
+        var resultado = document.querySelector("#idadeAqui")
         var agora = new Date()
 
-        var idade = (agora.getMonth() + 1) >= 10 && (agora.getDay() + 1) >= 6 ? agora.getFullYear() - 1990 : agora.getFullYear() - 1991
+        var idade;
+
+        if (Number(agora.getMonth() + 1) >= 10){
+
+            if ( agora.getDate() >= 6){
+                idade = agora.getFullYear() - 1990
+            }
+
+        }else{
+            idade = (agora.getFullYear()) - 1991
+        }
+
         resultado.innerHTML = `${idade}`
     </script>
 

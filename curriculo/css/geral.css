@@ -31,8 +31,27 @@ div{
     padding: 5px 0;
 }
 
-article > picture > img {
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+article > picture > img#foto-perfil{
     display: none;
+    width: 80px;
+    height: 74px;
+
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+article > picture > img#qr-code{
+    display: none;
+    width: 80px;
+    height: 74px;
+
+    margin-top: 10px;
+    margin-right: 15px;
 }
 
 p{
