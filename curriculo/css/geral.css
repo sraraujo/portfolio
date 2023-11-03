@@ -37,18 +37,23 @@ article{
 }
 
 article > picture > img#foto-perfil{
-    display: none;
-    width: 80px;
-    height: 74px;
+    display: flex;
+    width: 74px;
+    height: 80px;
+    object-fit: cover;
 
     margin-top: 10px;
     margin-right: 15px;
+
+    object-fit: cover;
+    border: 1px solid black;
 }
 
 article > picture > img#qr-code{
     display: none;
-    width: 80px;
-    height: 74px;
+    width: 74px;
+    height: 80px;
+    object-fit: cover;
 
     margin-top: 10px;
     margin-right: 15px;

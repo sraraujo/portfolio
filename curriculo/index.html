@@ -23,20 +23,20 @@
             
             <article>
 
-                <div>
+                <div contenteditable="true">
                     <p><strong>Bairro:</strong> Guanaces, Cascavel/CE</p>
-                    <p><strong>Contato / Wpp:</strong> (85) 9.9961-1172 / 85 9.8568-0661</p>
-                    <p><strong>Email:</strong> jap_araujo@hotmail.com</p>
+                    <p><strong>Contato / Wpp:</strong> (85) x.xxxx-xxxx</p>
+                    <p><strong>Email:</strong> Exemplo@hotmail.com</p>
                     <p class="nao-imprimivel"><strong>GitHub:</strong> <a href="https://github.com/sraraujo" target="_blank" rel="external">Sraraujo</a> / <a href="https://sraraujo.github.io/projetos/" target="_blank" rel="external">Página de Projetos</a></p>
                 </div>
 
                 <picture>
-                    <img src="imagens/jap-p.jpg" alt="Foto de perfil dejonas de Araújo" id="foto-perfil">
+                    <img src="imagens/jap.jpg" alt="Foto de perfil" id="foto-perfil">
                     <img src="imagens/qe-code-curriculo.jpg" alt="QR-Code" id="qr-code">
                 </picture>
 
             </article>  
-            
+               
             <fieldset>
                 <legend>Dados Pessoais</legend>
 
@@ -83,7 +83,7 @@
             <fieldset>
                 <legend>Formação Acadêmica & Escolar</legend>
                 
-                <div>
+                <div contenteditable="true">
                     <p><strong>UNIVERSIDADE ESTADUAL DO CEARÁ - UECE</strong></p>
                     <p><strong>Curso:</strong> Computação / Licenciatura (via EaD)</p>
                     <p><strong>Período:</strong> 8º Semestre</p>
@@ -130,24 +130,7 @@
 
     </main>
 
-    <script>
-        var resultado = document.querySelector("#idadeAqui")
-        var agora = new Date()
-
-        var idade;
-
-        if (Number(agora.getMonth() + 1) >= 10){
-
-            if ( agora.getDate() >= 6){
-                idade = agora.getFullYear() - 1990
-            }
-
-        }else{
-            idade = (agora.getFullYear()) - 1991
-        }
-
-        resultado.innerHTML = `${idade}`
-    </script>
+    <script src="script/calcularIdade.js"></script>
 
 </body>
 </html>
