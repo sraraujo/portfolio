@@ -8,6 +8,11 @@
         width: 450px;
     }
 
+    .dados-pessoais{
+        display: flex;
+        justify-content: space-between;
+    }    
+
     p{
         font-size: 12px;
         margin: 5px 10px;
@@ -35,11 +40,6 @@
 
     main{
         width: 550px;
-    }
-
-    .dados-pessoais{
-        display: flex;
-        justify-content: space-between;
     }
 
     legend{
