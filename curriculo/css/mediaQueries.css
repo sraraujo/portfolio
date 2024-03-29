@@ -65,11 +65,12 @@
 
 @media print {
     h1{
+        text-align: left;
         font-size: 37px;
     }
 
     main{
-        width: 600px;
+        width: 650px;
         margin: 0 auto;
         box-shadow: none;
         border-radius: 0;
@@ -101,6 +102,18 @@
     a, a:visited{
         color: black;
     }
+
+    .cursos{
+        display: flex;
+        flex-wrap: wrap;
+
+        columns: 2;
+    }
+
+    .cursos > div{
+        width: 50%;
+    }
+
 }
 
 @page {

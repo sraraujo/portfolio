@@ -24,7 +24,7 @@ main{
 
 h1{
     font-size: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 div{
@@ -76,7 +76,7 @@ p::selection, strong::selection, a::selection{
 }
 
 fieldset{
-    margin: 15px auto;
+    margin: 0 auto 15px auto;
     border-radius: 8px;   
 
     border:  2px solid rgba(0, 0, 0, 1);
