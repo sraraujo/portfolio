@@ -15,7 +15,7 @@ body{
 }
 
 nav{
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -67,6 +67,11 @@ section{
 section p{
     max-width: 600px;
     text-align: justify;
+}
+
+div > p > a{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 img{
