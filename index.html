@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,350 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <!-- CSS Geral -->
     <link rel="stylesheet" href="css/geral.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+
+  <header>
+    <nav>
+      <a href="#"> Home </a>
+      <a href="#sobre"> Sobre mim</a>
+      <a href="#projetos"> Projetos </a>
+      <a href="curriculo/index.html" target="_blank"> CV </a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="sobre" class="titulos"> &lt;Sobre mim/&gt; </h2>
+      <p> Olá, eu sou Jonas Araújo, <strong>Desenvolvedor Backend PHP <mark>em formação</mark></strong>, com conhecimento básico do Frontend.</p>
+      
+      <p class="mb-4 text-center"> 
+        <!-- Linguagens: -->
+        <img src="imagens/logo/logo-html.jpeg" alt="Tag do HTML" width="55" title="HTML">
+        <img src="imagens/logo/logo-css.png" alt="Tag do CSS" width="55" title="CSS">
+        <img src="imagens/logo/logo-js.png" alt="Logo do JavaScript" width="60" title="JavaScript">
+        <img src="imagens/logo/logo-python.png" alt="Logo do Python" width="62" title="Python">
+        <img src="imagens/logo/logo-php.png" alt="Logo do PHP" width="66" height="" title="PHP">
+        <img src="imagens/logo/logo-MySQL.png" alt="Logo do SQL" width="66" title="SQL">
+        <!-- Frameworks: -->
+        <img src="imagens/logo/logo-bootstrap.jpg" alt="Logo Bootstrap 5" width="66" title="Bootstrap">
+        <img src="imagens/logo/logo-laravel.png" alt="Laravel" width="55" title="Laravel">
+        <img src="imagens/logo/logo-codelgniter.png" alt="Logo CodeIgniter" width="55" title="CodeIgniter">
+      </p>
+      
+    </section>
+
+    <hr>
+
+    <section>
+      <h2 id="projetos" class="titulos"> &lt;Projetos/&gt; </h2>
+
+      <!-- Sistema de estoque -->
+      <article>
+        <div class="container fluid">
+          <div class="row">
+            <h4> Sistema de estoque </h4>
+            <div class="d-sm-flex">
+              <!-- imagens do proejtos -->
+              <div class="col-sm-12 col-md-6 me-2">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/login.jpg" class="d-block w-100" alt="Tela de login">
+                      <caption> Foto: <em>Tela de login</em> </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/dashboard-admin.jpg" class="d-block w-100" alt="Tela inicial visão do Administrador">
+                      <caption> Foto: <em>Tela inicial visão do Administrado</em>r </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/dashboard-usuario.jpg" class="d-block w-100" alt="Tela inicial visão do usuário ">
+                      <caption> Foto: <em>Tela inicial visão do usuário</em>  </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/nova-venda.jpg" class="d-block w-100" alt="Tela de registrar venda">
+                      <caption> Foto: <em>Tela de registrar vend</em>a </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/lista-vendas.jpg" class="d-block w-100" alt="Tela de histórico de vendas">
+                      <caption> Foto: <em>Tela de histórico de venda</em>s </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/novo-produto.jpg" class="d-block w-100" alt="Tela de cadastro de produto">
+                      <caption> Foto: <em>Tela de cadastro de produt</em>o </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <img src="imagens/sistema-estoque/historico-atividades.jpg" class="d-block w-100" alt="Tela de registro de atividades dos usuários ">
+                      <caption> Foto: <em>Tela de registro de atividades dos usuários</em>  </caption>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <!-- botões -->
+                <div class="mt-4">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver Projeto
+                  </button>
+                  <a href="https://github.com/sraraujo/sistema-estoque" target="_blank" class="btn btn-success mx-3"> Ver Código</a>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel"> Informações</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Dados de login:</p>
+                          <p><strong>E-mail: </strong> admin@email.com || <strong>Senha: </strong> 123 </p>
+                          <p><strong>E-mail: </strong> usuario@email.com || <strong>Senha: </strong> 123 </p>
+
+                          <p> </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar </button>
+                          <a type="button" class="btn btn-primary" href="https://sistema-estoque-22e6243ec85d.herokuapp.com/" target="_blank"> Ver Projeto</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Button modal Fim -->
+                </div>
+              </div>
+              <!-- infromações do sistema -->
+              <div class="col-sm-12 col-md-6 p-2">
+                <h5> Informações do projeto </h5>
+
+                  <p> O sistema de estoque tem a proposta inicial de registrar seus produtos, vendas e gerenciar seu estoque, disponde de 6 módulos, que são: Estoque, Vendas, Funcionários, Clientes, Fornecedores, Administrativo.
+                    
+                  </p>                  
+                  <p> Liguagens: HTML, CSS, JavaScript, PHP, Bootstrap, MySQL* </p>
+                  <p> Padrão: Arquitetura MVC </p>
+                  <!-- <p> <a href="#" target="_blank"> Ver Projeto </a></p> -->
+                  <!-- <p> OBS: Projeto criado no curso de PHP pela Universidde do Trabalho Digital </p> -->
+                  <!-- Button modal -->
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <hr>
+
+      <!-- Gerador de Etiquetas || direita -->
+      <article>
+        <div class="container fluid">
+          <div class="row">
+            <h4> Gerador de Etiquetas </h4>
+            <!-- iamgens do projeto -->
+            <div class="d-sm-flex direita">
+              <div class="col-sm-12 col-md-6 ms-2">
+                <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <img src="imagens/gerador-etiquetas/gerador-etiqueta.png" class="d-block w-100" alt="página inicial">
+                      <caption> Foto: <em>página inicial</em> </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="imagens/gerador-etiquetas/gerador-etiqueta-produtos.png" class="d-block w-100" alt="foto de opções de produtos">
+                      <caption> Foto:  <em> opções de produtos</em> </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="imagens/gerador-etiquetas/gerador-etiqueta-visualizar.png" class="d-block w-100" alt="Página da História da jamaica">
+                      <caption> Foto: <em>Página da História da Jamaica</em> </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="imagens/gerador-etiquetas/gerador-etiqueta-print.png" class="d-block w-100" alt="área de impressão das etiquetas">
+                      <caption> Foto: <em> preparando as etiquetas para impressão </em> </caption>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- informações do projeto - jamaica -->
+              <div class="col-sm-12 col-md-6 p-3">
+                <h5> Informações do projeto </h5>
+  
+                    <p> O gerador de etiquetas foi criado para automatizar o processo de impressão de etiquetas para a Panificadora Xavier.</p>
+                    
+                    <p> Liguagens: HTML, CSS, JavaScript, Bootstrap</p>
+                    <p> 
+                      <a href="https://padaria-xavier.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                      <a href="https://github.com/sraraujo/padaria-xavier" target="_blank" class="btn btn-success mx-3"> Ver Código</a>
+                    </p>
+
+               </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr>
+
+      <!-- Site temático: Jamaica -->
+      <article>
+        <div class="container fluid">
+          <div class="row">
+            <h4> Site temático: Jamaica</h4>
+            <!-- iamgens do projeto -->
+            <div class="d-sm-flex">
+              <div class="col-sm-12 col-md-6">
+                <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="imagens/Jamaica/jamaica.png" class="d-block w-100" alt="Página home">
+                      <caption> Foto: <em>Página home</em> </caption>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagens/Jamaica/hall-fama.png" class="d-block w-100" alt="Página Hall da fama">
+                      <caption> Foto:  <em>Página Hall da fama</em> </caption>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagens/Jamaica/historia.png" class="d-block w-100" alt="Página da História da jamaica">
+                      <caption> Foto: <em>Página da História da Jamaica</em> </caption>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagens/Jamaica/quiz.png" class="d-block w-100" alt="Página do Quiz sobre a Jamaica">
+                      <caption> Foto: <em> Página do Quiz sobre a Jamaica </em> </caption>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- informações do projeto - jamaica -->
+              <div class="col-sm-12 col-md-6 p-3">
+                <h5> Informações do projeto </h5>
+  
+                    <p> O site foi criado para um projeto escolar sobre a Jamaica .</p>
+                    
+                    <p> Liguagens: HTML, CSS, JavaScript</p>
+                    <p> 
+                      <a href="https://sraraujo.github.io/jamaica/index.html" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                      <a href="https://github.com/sraraujo/jamaica" target="_blank" class="btn btn-success mx-3"> Ver Código</a>
+                    </p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </article>   
+      <hr>   
+
+      <!-- SOS Esperança || direita -->
+      <article>
+        <div class="container fluid">
+          <div class="row">
+            <h4> S.O.S Esperança </h4>
+            <!-- iamgens do projeto -->
+            <div class="d-sm-flex direita">
+              <div class="col-sm-12 col-md-6">
+                <div id="carouselExampleAutoplaying4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                      <img src="imagens/sos-esperanca/sos-home.png" class="d-block w-100" alt="página home">
+                      <caption> Foto: <em>página home</em> </caption>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <img src="imagens/sos-esperanca/sos-buscar.png" class="d-block w-100" alt="foto de opções de produtos">
+                      <caption> Foto:  <em> página para buscar cap's em Fortaleza-CE</em> </caption>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- informações do projeto - jamaica -->
+              <div class="col-sm-12 col-md-6 p-3">
+                <h5> Informações do projeto </h5>
+  
+                    <p> O site SOS Esperança foi criado na <strong>Imersão Dev da Alura com Gemini</strong>, com o tema sobre o Setembro Amarelo</p>
+                    
+                    <p> Liguagens: HTML, CSS, JavaScript, Bootstrap</p>
+                    <p> 
+                      <a href="https://sos-esperanca.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                      <a href="https://github.com/sraraujo/SOS-esperanca" target="_blank" class="btn btn-success mx-3"> Ver Código</a>
+                    </p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr>
+
+      <!-- Outros projetos básicos -->
+      <div class="text-end">
+        Outros projetos básicos <a href="https://sraraujo.github.io/projetos/" target="_blank">aqui</a> 
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Jonas Araújo &copy; 2004 
+  </footer>
+ 
+  
+  <!-- <div class="container">
+      <div class="row">
+          <header>
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid bg-success">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-light" id="navbarNav">
+                      <ul class="navbar-nav text-light">
+                        <li class="nav-item">
+                          <a class="nav-link active text-light" aria-current="page" href="#"> Dados Pessoas </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="#"> Experiência Profissional</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="#">Formação </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="curriculo/index.html" class="nav-link text-light" aria-disabled="true">Currículo</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </header>
+      </div>
+  </div> -->
+  <!-- Js boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -48,6 +48,10 @@
         padding: 0 5px;
     }
 
+    #informacaoVaga ul{
+        columns: 2;
+    }
+
     p{
         font-size: 14px;
     }
@@ -112,6 +116,11 @@
 
     .cursos > div{
         width: 50%;
+    }
+
+
+    #informacaoVaga #caixaInformacoes{
+        columns: 2;
     }
 
 }
