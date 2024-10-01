@@ -115,7 +115,7 @@ legend{
     padding: 0 10px;
 }
 
-a, a:visited{
+main a, main > a:visited{
     color: rgb(7, 7, 226);
     text-decoration: none;
 }
@@ -126,4 +126,15 @@ a:hover{
 }
 a:active{
     color: red;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
 }

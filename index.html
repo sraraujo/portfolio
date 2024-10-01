@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfólio</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -18,18 +18,19 @@
 
   <header>
     <nav>
-      <a href="#"> Home </a>
+      <a href="index.html">Home</a>
       <a href="#sobre"> Sobre mim</a>
       <a href="#projetos"> Projetos </a>
-      <a href="curriculo/index.html" target="_blank"> CV </a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2 id="sobre" class="titulos"> &lt;Sobre mim/&gt; </h2>
-      <p> Olá, eu sou Jonas Araújo, <strong>Desenvolvedor Backend PHP <mark>em formação</mark></strong>, com conhecimento básico do Frontend.</p>
+      <h2 id="sobre" class="titulos"> &lt; Sobre mim/ &gt; </h2>
+      <p> Olá, eu sou Jonas Araújo, <strong>Desenvolvedor Backend com PHP</strong>, com conhecimento básico do Frontend.</p>
       
+      <!-- linguagens -->
       <p class="mb-4 text-center"> 
         <!-- Linguagens: -->
         <img src="imagens/logo/logo-html.jpeg" alt="Tag do HTML" width="55" title="HTML">
@@ -39,7 +40,7 @@
         <img src="imagens/logo/logo-php.png" alt="Logo do PHP" width="66" height="" title="PHP">
         <img src="imagens/logo/logo-MySQL.png" alt="Logo do SQL" width="66" title="SQL">
         <!-- Frameworks: -->
-        <img src="imagens/logo/logo-bootstrap.jpg" alt="Logo Bootstrap 5" width="66" title="Bootstrap">
+        <img src="imagens/logo/logo-bootstrap.jpg" alt="Logo Bootstrap 5" width="69" title="Bootstrap">
         <img src="imagens/logo/logo-laravel.png" alt="Laravel" width="55" title="Laravel">
         <img src="imagens/logo/logo-codelgniter.png" alt="Logo CodeIgniter" width="55" title="CodeIgniter">
       </p>
@@ -49,16 +50,16 @@
     <hr>
 
     <section>
-      <h2 id="projetos" class="titulos"> &lt;Projetos/&gt; </h2>
+      <h2 id="projetos" class="titulos"> &lt; Projetos /&gt; </h2>
 
       <!-- Sistema de estoque -->
       <article>
         <div class="container fluid">
           <div class="row">
             <h4> Sistema de estoque </h4>
-            <div class="d-sm-flex">
+            <div class="d-sm-flex my-4">
               <!-- imagens do proejtos -->
-              <div class="col-sm-12 col-md-6 me-2">
+              <div class="col-sm-12 col-md-6 me-md-3">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="6000">
@@ -101,7 +102,7 @@
                 </div>
 
                 <!-- botões -->
-                <div class="mt-4">
+                <div class="my-4 text-center">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Ver Projeto
                   </button>
@@ -133,14 +134,24 @@
                 </div>
               </div>
               <!-- infromações do sistema -->
-              <div class="col-sm-12 col-md-6 p-2">
-                <h5> Informações do projeto </h5>
+              <div class="col-sm-12 col-md-6 ">
+                <h5 class="subtitulo"> Informações do Projeto </h5>
 
-                  <p> O sistema de estoque tem a proposta inicial de registrar seus produtos, vendas e gerenciar seu estoque, disponde de 6 módulos, que são: Estoque, Vendas, Funcionários, Clientes, Fornecedores, Administrativo.
+                  <p> O sistema de estoque registra seus produtos, vendas e gerencia seu estoque, disponde de 6 módulos, que são: Estoque, Vendas, Funcionários, Clientes, Fornecedores, Administrativo.
                     
-                  </p>                  
-                  <p> Liguagens: HTML, CSS, JavaScript, PHP, Bootstrap, MySQL* </p>
-                  <p> Padrão: Arquitetura MVC </p>
+                  </p> 
+                       
+                  <!-- tag da linguagem -->
+                  <p> 
+                    <span class="tag">HTML </span>
+                    <span class="tag text-success">CSS </span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag text-success">PHP</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag text-success">MySQL*</span>
+                  </p>
+
+                  <p> <strong>Arquitetura MVC</strong> </p>
                   <!-- <p> <a href="#" target="_blank"> Ver Projeto </a></p> -->
                   <!-- <p> OBS: Projeto criado no curso de PHP pela Universidde do Trabalho Digital </p> -->
                   <!-- Button modal -->
@@ -158,8 +169,8 @@
           <div class="row">
             <h4> Gerador de Etiquetas </h4>
             <!-- iamgens do projeto -->
-            <div class="d-sm-flex direita">
-              <div class="col-sm-12 col-md-6 ms-2">
+            <div class="d-sm-flex direita mt-4">
+              <div class="col-sm-12 col-md-6 ms-md-3">
                 <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
@@ -172,7 +183,7 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
                       <img src="imagens/gerador-etiquetas/gerador-etiqueta-visualizar.png" class="d-block w-100" alt="Página da História da jamaica">
-                      <caption> Foto: <em>Página da História da Jamaica</em> </caption>
+                      <caption> Foto: <em> Visualiza a etiqueta </em> </caption>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
                       <img src="imagens/gerador-etiquetas/gerador-etiqueta-print.png" class="d-block w-100" alt="área de impressão das etiquetas">
@@ -188,19 +199,26 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+
+                <div class="my-4">
+                  <p class="text-center"> 
+                    <a href="https://padaria-xavier.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                    <a href="https://github.com/sraraujo/padaria-xavier" target="_blank" class="btn btn-success"> Ver Código</a>
+                  </p>
+                </div>
               </div>
-              <!-- informações do projeto - jamaica -->
-              <div class="col-sm-12 col-md-6 p-3">
+              <!-- informações do projeto -->
+              <div class="col-sm-12 col-md-6">
                 <h5> Informações do projeto </h5>
   
-                    <p> O gerador de etiquetas foi criado para automatizar o processo de impressão de etiquetas para a Panificadora Xavier.</p>
+                    <p> O gerador de etiquetas foi criado para automatizar o processo de impressão de etiquetas para a <strong>Panificadora Xavier</strong>.</p>
                     
-                    <p> Liguagens: HTML, CSS, JavaScript, Bootstrap</p>
-                    <p> 
-                      <a href="https://padaria-xavier.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
-                      <a href="https://github.com/sraraujo/padaria-xavier" target="_blank" class="btn btn-success"> Ver Código</a>
+                    <p>
+                      <span class="tag">HTML</span>
+                      <span class="tag text-success">CSS</span>
+                      <span class="tag">JavaScript</span>
+                      <span class="tag text-success">Bootstrap</span>
                     </p>
-
                </div>
             </div>
           </div>
@@ -214,8 +232,8 @@
           <div class="row">
             <h4> Site temático: Jamaica</h4>
             <!-- iamgens do projeto -->
-            <div class="d-sm-flex">
-              <div class="col-sm-12 col-md-6">
+            <div class="d-sm-flex my-4" >
+              <div class="col-sm-12 col-md-6 me-md-5">
                 <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -244,17 +262,24 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+
+                <div class="my-4">
+                  <p class="text-center">
+                    <a href="https://sraraujo.github.io/jamaica/index.html" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                    <a href="https://github.com/sraraujo/jamaica" target="_blank" class="btn btn-success"> Ver Código</a>
+                  </p>
+                </div>
               </div>
               <!-- informações do projeto - jamaica -->
-              <div class="col-sm-12 col-md-6 p-3">
+              <div class="col-sm-12 col-md-6">
                 <h5> Informações do projeto </h5>
   
-                    <p> O site foi criado para um projeto escolar sobre a Jamaica .</p>
+                    <p> O site foi criado para um projeto escolar sobre o tema Jamaica. </p>
                     
-                    <p> Liguagens: HTML, CSS, JavaScript</p>
                     <p> 
-                      <a href="https://sraraujo.github.io/jamaica/index.html" target="_blank" class="btn btn-primary"> Ver Projeto </a>
-                      <a href="https://github.com/sraraujo/jamaica" target="_blank" class="btn btn-success"> Ver Código</a>
+                      <span class="tag">HTML</span>
+                      <span class="tag text-success">CSS</span>
+                      <span class="tag">Javascript</span>
                     </p>
                </div>
             </div>
@@ -267,9 +292,9 @@
       <article>
         <div class="container fluid">
           <div class="row">
-            <h4> S.O.S Esperança </h4>
+            <h4 class=""> S.O.S Esperança </h4>
             <!-- iamgens do projeto -->
-            <div class="d-sm-flex direita">
+            <div class="d-sm-flex direita my-4">
               <div class="col-sm-12 col-md-6">
                 <div id="carouselExampleAutoplaying4" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -291,17 +316,25 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+
+                <div class="my-4">
+                  <p class="text-center"> 
+                    <a href="https://sos-esperanca.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
+                    <a href="https://github.com/sraraujo/SOS-esperanca" target="_blank" class="btn btn-success"> Ver Código</a>
+                  </p>
+                </div>
               </div>
               <!-- informações do projeto - jamaica -->
-              <div class="col-sm-12 col-md-6 p-3">
+              <div class="col-sm-12 col-md-6">
                 <h5> Informações do projeto </h5>
   
                     <p> O site SOS Esperança foi criado na <strong>Imersão Dev da Alura com Gemini</strong>, com o tema sobre o Setembro Amarelo</p>
                     
-                    <p> Liguagens: HTML, CSS, JavaScript, Bootstrap</p>
                     <p> 
-                      <a href="https://sos-esperanca.vercel.app/" target="_blank" class="btn btn-primary"> Ver Projeto </a>
-                      <a href="https://github.com/sraraujo/SOS-esperanca" target="_blank" class="btn btn-success"> Ver Código</a>
+                      <span class="tag ">HTML</span>
+                      <span class="tag text-success">CSS</span>
+                      <span class="tag ">JavaScript</span>
+                      <span class="tag text-success">Bootstrap</span>
                     </p>
                </div>
             </div>
@@ -314,11 +347,31 @@
       <div class="text-end">
         Outros projetos básicos <a href="https://sraraujo.github.io/projetos/" target="_blank">aqui</a> 
       </div>
+
+      <article>
+        <h2 class="titulos mb-5" id="contato"> &lt; Contatos /&gt; </h2>
+
+        <a href="https://github.com/sraraujo/" target="_blank">
+          <img src="imagens/logo/github.png" alt="Logo do GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/jonas-araujo-245a839b/" target="_blank">
+          <img src="imagens/logo/link.png" alt="Logo do Linkdin">
+        </a>
+        <a href="https://www.instagram.com/jap_araujo/" target="_blank">
+          <img src="imagens/logo/instagram.png" alt="Logo do Instagram">
+        </a>
+        <a href="curriculo/index.html" target="_blank">
+          <img src="imagens/logo/cv.png" alt="Logo do currículo vitae">
+        </a>
+        <!-- <strong>E-mail:</strong> jap_araujo@hotmail.com -->
+
+      </article>
     </section>
+
   </main>
 
   <footer>
-    Jonas Araújo &copy; 2004 
+    Jonas Araújo &copy; 2024 
   </footer>
  
   

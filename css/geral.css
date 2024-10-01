@@ -6,22 +6,30 @@
     --preto: #000000;
     --azul-1: #1E3E62;
     --azul-2: #0B192C;
+    --azul-3: #4477b2;
     --laranja: #FF6500;
 }
 
 body{
     width: 100%;
-    background-color: var(--cinza);
+    background-color: var(--preto);
 }
 
-nav{
+header{
+    position: relative;
+}
+
+header nav{
     font-size: 12px;
+    width: 100%;
+    height: 50px;
+
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    height: 50px;
-    background-color: var(--preto);
+    
+    background-color: var(--preto);    
 }
 
 nav a{
@@ -45,15 +53,20 @@ nav a:active{
 
 main{
     background-color: var(--branco);
-    max-width: 920px;
+    max-width: 940px;
     
     margin: 0 auto;
-    padding: 20px 40px
+    padding: 20px 40px;
 }
 
-main h2, h3{
+main h4{
     color: var(--azul-2);
     margin: 20px 0;
+}
+
+section h5{
+    color: var(--azul-3);
+    text-transform: capitalize;
 }
 
 .titulos{
@@ -69,9 +82,13 @@ section p{
     text-align: justify;
 }
 
+section p span.tag{
+    color: var(--laranja);
+    font-weight: 900;
+}
+
 div > p > a{
     display: flex;
-    flex-wrap: nowrap;
 }
 
 img{
@@ -81,6 +98,17 @@ img{
 article{
     padding: 10px;
     margin: 10px 0;
+}
+
+article a{
+    text-decoration: none;
+}
+
+article a img:hover{
+    border-radius: 50%;
+    border: 3px solid var(--laranja);
+    transform: translate(-5%, -5%);
+    transition: 0.2s;
 }
 
 footer{
@@ -98,7 +126,7 @@ footer{
 }
 
 @media screen and (min-width: 922px) {
-    nav{
+    header nav{
         font-size: 18px;
     }
     .direita{

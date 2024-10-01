@@ -128,3 +128,9 @@
 @page {
     margin-top: 0;
 }
+
+@media print{
+    footer{
+        display: none;
+    }
+}
