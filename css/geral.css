@@ -82,6 +82,13 @@ section p{
     text-align: justify;
 }
 
+p#tecnologias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
 section p span.tag{
     color: var(--laranja);
     font-weight: 900;
@@ -129,6 +136,7 @@ footer{
     header nav{
         font-size: 18px;
     }
+
     .direita{
         display: flex;
         flex-direction: row-reverse;
@@ -138,5 +146,4 @@ footer{
     footer{
         font-size: 20px;
     }
-    
 }
