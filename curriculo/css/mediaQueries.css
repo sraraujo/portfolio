@@ -18,9 +18,15 @@
         margin: 5px 10px;
         padding: 0 5px;
     }
+
+    h5{
+        position: absolute;
+        left: calc(52vw);
+        top: 66px;
+    }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width:768px) {
 
     article > picture > img#foto-perfil{
         display: flex;
@@ -33,7 +39,7 @@
 }
 
 /* Telas de tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     h1{
         font-size: 34px;
     }
@@ -55,6 +61,13 @@
     p{
         font-size: 14px;
     }
+
+    h5{
+        font-size: 12px;
+        position: absolute;
+        left: calc(54vw);
+        top: 74px;
+    }
 }
 
 /* Telas de computador */
@@ -64,6 +77,14 @@
     }
     main{
         width: 600px;
+    }
+
+    h5{
+        font-size: 14px;
+
+        position: absolute;
+        left: calc(52vw);
+        top: 76px;
     }
 }
 
@@ -91,13 +112,13 @@
         justify-content: space-between;
     }
 
-    article > picture > img#foto-perfil{
+    /* article > picture > img#foto-perfil{
         display: none;
-    }
+    } */
 
-    article > picture > img#qr-code{
+    /* article > picture > img#qr-code{
         display: flex;
-    }
+    } */
 
     p{
         font-size: 12px;
@@ -123,14 +144,20 @@
         columns: 2;
     }
 
+    h5{
+        font-size: 14px;
+
+        position: absolute;
+        left: calc(50vw);
+        top: 53px;
+    }
+
+    footer{
+        display: none;
+    }
+
 }
 
 @page {
     margin-top: 0;
-}
-
-@media print{
-    footer{
-        display: none;
-    }
 }

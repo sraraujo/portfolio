@@ -12,6 +12,15 @@ body{
     background-color: gray;
 }
 
+h5{
+    color: red;
+    font-size: 10px;
+    text-align: end;
+    font-weight: bold;
+
+    position: absolute;
+}
+
 main{
     width: 340px;
     padding: 20px;
@@ -108,7 +117,7 @@ fieldset{
 
 legend{
     color: rgb(2, 70, 107);
-    text-align: center;
+    text-align: start;
     font-weight: bold;
     padding: 0 10px;
 }
